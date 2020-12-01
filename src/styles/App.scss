@@ -1,44 +1,16 @@
 @import "./theme/colors";
 
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { .react-app { border: 12px solid firebrick; height: 50px !important;; } }
 
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { .react-app { border: 12px solid blue; height: 50px !important;; } }
 
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { .react-app { border: 12px solid violet; height: 50px !important; }  }
 
-// Extra small devices (portrait phones, less than 576px)
-@media (max-width: 575.98px) { 
-
-a, p, h1, h2, h3, h4, h5, figure, article { color: #ffffff;}
- 
-.appBGColor { background-color:var(--be-primary-darker);}
-
-.controlWidth { object-fit: cover; width: 100% }
-                              
-.react-app {
-    background-color: blue;
-    display: grid;
-    grid-template-columns: 2fr 0.5fr 2fr 1fr;
-    grid-template-rows: min-content 60fr 10fr;
-    gap: 0px 0px;
-    grid-template-areas:
-      "logo hamburger . button"
-      "content content content content"
-      "footer footer footer footer";
-    
-     }
-header {
-    display: none;
-}
-
-
- }
-
-// Small devices (landscape phones, less than 768px)
-@media (max-width: 767.98px) { .react-app {background-color: black; }}
-
-// Medium devices (tablets, less than 992px)
-@media (max-width: 991.98px) { .react-app {background-color: black; } }
-
-// Large devices (desktops, less than 1200px)
-@media (max-width: 1199.98px) { 
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { .react-app { border: 12px solid yellow; height: 50px !important; } }
                                
 
 .appBGColor { background-color:var(--be-primary-darker);}
@@ -157,7 +129,7 @@ width: 100%
                 
                 .reel {
                     grid-area: reel;
-                    border: 3px solid green;
+    
                    background-image: url("../assets//images/reel.jpg");
                     
                     box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
@@ -371,6 +343,6 @@ width: 100%
            
         }                           
                     
-}
+
 
 
