@@ -2,7 +2,7 @@
 @import "./theme/logo";
 
 // Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) { .react-app {  @include appBorder(purple); }
+@media (min-width: 576px) { .react-app {  @include appBorder(tomato); }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) { .react-app {  @include appBorder(pink);   } }
