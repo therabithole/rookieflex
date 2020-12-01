@@ -1,0 +1,34 @@
+:root {
+    --be-primary-lighter: #333333;
+    --be-primary-default: #242424;
+    --be-primary-darker: #1e1e1e;
+    --be-accent-default: #F65F54;
+    --be-accent-lighter: #FCC7C3;
+    --be-accent-contrast: rgba(255, 255, 255, 1);
+    --be-accent-emphasis: rgba(233,236,254,0.1);
+    --be-foreground-base: #fff;
+    --be-text: #fff;
+    --be-hint-text: rgba(255, 255, 255, 0.5);
+    --be-secondary-text: rgba(255, 255, 255, 0.7);
+    --be-label: rgba(255, 255, 255, 0.7);
+    --be-background: #1D1D1D;
+    --be-background-alternative: #121212;
+    --be-divider-lighter: rgba(255, 255, 255, 0.06);
+    --be-divider-default: rgba(255, 255, 255, 0.12);
+    --be-disabled-button-text: rgba(255, 255, 255, 0.3);
+    --be-disabled-toggle: #000;
+    --be-chip: #616161;
+    --be-hover: rgba(255, 255, 255, 0.04);
+    --be-selected-button: #212121;
+    --be-disabled-button: rgba(255, 255, 255, 0.12);
+    --be-raised-button: #424242;
+    --be-backdrop: #BDBDBD;
+    --be-link: #c5cae9;
+
+}
+
+a, p, h1, h2, h3, h4, h5, figure, article {
+    color: white;} 
+
+
+.bgColor { background-color:var(--be-primary-darker);}
