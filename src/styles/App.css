@@ -32,448 +32,517 @@
   --extrasmall: 12px;
 }
 
-@media (min-width: 400px) {
+.bgColor {
+  background-color: var(--be-primary-darker);
+}
+
+a, p, h1, h2, h3, h4, h5, figure, article {
+  color: #ffffff;
+}
+
+.controlWidth, .react-app .content.home .teasers .teaser_freedom img, .react-app .content.home .teasers .teaser_uncommit img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+@media (max-width: 575.98px) {
   .react-app {
-    background-color: var(--be-primary-darker);
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-rows: 2vh 10vh 1fr 50vh;
-        grid-template-rows: 2vh 10vh 1fr 50vh;
-    -ms-grid-columns: 100vw;
-        grid-template-columns: 100vw;
-        grid-template-areas: "header" "header" "content" "footer";
-  }
-  .react-app a, .react-app p, .react-app h1, .react-app h2, .react-app h3, .react-app h4, .react-app h5, .react-app figure, .react-app article {
-    color: white;
-  }
-  .react-app .menu-and-navigation {
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 2;
-    -ms-grid-column: 1;
-    grid-area: header;
-    z-index: 10;
-    margin-left: 50vh;
-    margin-top: 3vh;
-  }
-  .react-app .menu-and-navigation .burger {
-    display: -ms-grid;
-    display: grid;
-    -webkit-box-pack: left;
-        -ms-flex-pack: left;
-            justify-content: left;
-    grid-row-gap: 5px;
-  }
-  .react-app .menu-and-navigation .burger .line1 {
-    width: 40px;
-    height: 9px;
-    background-color: var(--be-accent-default);
-  }
-  .react-app .menu-and-navigation .burger .line2 {
-    width: 50px;
-    height: 9px;
-    background-color: var(--be-accent-default);
-    -webkit-transition: -webkit-transform;
-    transition: -webkit-transform;
-    transition: transform;
-    transition: transform, -webkit-transform;
-  }
-  .react-app .menu-and-navigation .burger .line3 {
-    width: 30px;
-    height: 9px;
-    background-color: var(--be-accent-default);
-  }
-  .react-app .menu-and-navigation .burger .line1:hover {
-    width: 60px;
-  }
-  .react-app .menu-and-navigation .burger .line2:hover {
-    width: 30px;
-  }
-  .react-app .menu-and-navigation .burger .line3:hover {
-    width: 60px;
-  }
-  .react-app .menu-and-navigation .burger .trans:hover {
-    -webkit-transition: width 0.5s cubic-bezier(0.17, 0.67, 0.36, 0.62);
-    transition: width 0.5s cubic-bezier(0.17, 0.67, 0.36, 0.62);
-  }
-  .react-app .menu-and-navigation .navigation-list {
-    list-style: none;
-    display: inline;
-  }
-  .react-app .menu-and-navigation .navigation-links {
-    color: var(--be-accent-default);
-    padding: 10px;
-    display: inline-block;
-    text-decoration: none;
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
-    background-size: 600% 200%;
-    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(50%, var(--be-primary-darker)), color-stop(50%, white));
-    background-image: linear-gradient(to top, var(--be-primary-darker) 50%, white 50%);
-    font-size: 50px;
-    font-weight: bold;
-  }
-  .react-app .menu-and-navigation .navigation-links:hover {
-    background-position: 0 100%;
-    cursor: pointer;
-  }
-  .react-app .header {
     background-color: black;
-    z-index: 9;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 2;
-    -ms-grid-column: 1;
-    grid-area: header;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 10vh 5fr auto 8vh;
-        grid-template-columns: 10vh 5fr auto 8vh;
-        grid-template-areas: " logo . login-button . . ";
   }
-  .react-app .header img {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    grid-area: logo;
-    width: 30vw;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-row-align: center;
-        align-self: center;
+}
+
+@media (max-width: 767.98px) {
+  .react-app {
+    background-color: black;
   }
-  .react-app .header button {
-    -ms-grid-row: 1;
-    -ms-grid-column: 3;
-    grid-area: login-button;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    -ms-grid-column-align: center;
-        justify-self: center;
-    height: 8vh;
-    width: 10vw;
-    border-radius: 50px;
-    background-color: var(--be-accent-default);
-    color: white;
-    font-size: 1.3vw;
-    font-weight: 500;
-    border: 0px;
+}
+
+@media (max-width: 991.98px) {
+  .react-app {
+    background-color: black;
   }
-  .react-app .header button:hover {
-    cursor: pointer;
-  }
-  .react-app .content.home {
-    background-color: var(--be-background);
-    -ms-grid-row: 3;
-    -ms-grid-column: 1;
-    grid-area: content;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-rows: 120vh 100vh 170vh;
-        grid-template-rows: 120vh 100vh 170vh;
-    -ms-grid-columns: 100vw;
-        grid-template-columns: 100vw;
-        grid-template-areas: "reel" "features" "teasers";
-  }
-  .react-app .content.home .reel {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    grid-area: reel;
-    background-image: url("../assets//images/reel.jpg");
-    -webkit-box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
-            box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
-    background-color: #f8f7d8;
-    display: -ms-grid;
-    display: grid;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    -ms-grid-rows: 25vh 5vh 45vh;
-        grid-template-rows: 25vh 5vh 45vh;
-    -ms-grid-columns: 1fr 3fr 1fr;
-        grid-template-columns: 1fr 3fr 1fr;
-        grid-template-areas: ". heading . " ". sub-heading ." ". button . ";
-  }
-  .react-app .content.home .reel h1 {
-    -ms-grid-row: 1;
-    -ms-grid-column: 2;
-    grid-area: heading;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    -ms-grid-column-align: center;
-        justify-self: center;
-    font-size: 5vw;
-  }
-  .react-app .content.home .reel h2 {
-    -ms-grid-row: 2;
-    -ms-grid-column: 2;
-    grid-area: sub-heading;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    -ms-grid-column-align: center;
-        justify-self: center;
-    font-size: 4vh;
-    font-weight: 300;
-    text-align: center;
-  }
-  .react-app .content.home .reel button {
-    -ms-grid-row: 3;
-    -ms-grid-column: 2;
-    grid-area: button;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    -ms-grid-column-align: center;
-        justify-self: center;
-    height: 10vh;
-    width: 20vw;
-    border-radius: 50px;
-    background-color: var(--be-accent-default);
-    color: white;
-    font-size: 20px;
-    border: 0px;
-  }
-  .react-app .content.home .reel button button:hover {
-    cursor: pointer;
-  }
-  .react-app .content.home .features {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-    grid-area: features;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 5fr 5fr 5fr 1fr;
-        grid-template-columns: 1fr 5fr 5fr 5fr 1fr;
-    grid-column-gap: 2vw;
-    -ms-grid-rows: 1fr;
-        grid-template-rows: 1fr;
-        grid-template-areas: ". high-quality users discover .";
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .react-app .content.home .features article figure {
-    display: -ms-grid;
-    display: grid;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .react-app .content.home .features article figcaption {
-    text-align: center;
-  }
-  .react-app .content.home .features .high-quality {
-    -ms-grid-row: 1;
-    -ms-grid-column: 2;
-    grid-area: high-quality;
-  }
-  .react-app .content.home .features .users {
-    -ms-grid-row: 1;
-    -ms-grid-column: 3;
-    grid-area: users;
-  }
-  .react-app .content.home .features .discover {
-    -ms-grid-row: 1;
-    -ms-grid-column: 4;
-    grid-area: discover;
-  }
-  .react-app .content.home .features svg {
-    height: 15vh;
-  }
-  .react-app .content.home .teasers {
-    -ms-grid-row: 3;
-    -ms-grid-column: 1;
-    grid-area: teasers;
-    -ms-grid-rows: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-rows: 80vh 80vh;
-        grid-template-rows: 80vh 80vh;
-        grid-template-areas: "teaser_freedom" "teaser_uncommit";
-  }
-  .react-app .content.home .teasers .teaser_freedom {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    grid-area: teaser_freedom;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 7fr 7fr 1fr;
-        grid-template-columns: 1fr 7fr 7fr 1fr;
-    grid-column-gap: 4vw;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-line-pack: center;
-        align-content: center;
-        grid-template-areas: ". teaser-freedom-txt freedom-img  .";
-  }
-  .react-app .content.home .teasers .teaser_freedom article {
-    -ms-grid-row: 1;
-    -ms-grid-column: 2;
-    grid-area: teaser-freedom-txt;
-    display: -ms-grid;
-    display: grid;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: start;
-    -ms-grid-rows: 10% 40% 10%;
-        grid-template-rows: 10% 40% 10%;
-    grid-row-gap: 2vh;
-  }
-  .react-app .content.home .teasers .teaser_freedom article h5 {
-    font-size: 1.3vw;
-    text-transform: uppercase;
-    font-weight: 200;
-  }
-  .react-app .content.home .teasers .teaser_freedom article h2 {
-    font-size: 3vw;
-    font-weight: 500;
-  }
-  .react-app .content.home .teasers .teaser_freedom article h3 {
-    font-size: 1.5vw;
-    font-weight: 300;
-  }
-  .react-app .content.home .teasers .teaser_freedom img {
-    -ms-grid-row: 1;
-    -ms-grid-column: 3;
-    grid-area: freedom-img;
-  }
-  .react-app .content.home .teasers .teaser_uncommit {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-    grid-area: teaser_uncommit;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 7fr 7fr 1fr;
-        grid-template-columns: 1fr 7fr 7fr 1fr;
-    grid-column-gap: 4vw;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-line-pack: center;
-        align-content: center;
-        grid-template-areas: ". uncommit-img uncommit-txt .";
-  }
-  .react-app .content.home .teasers .teaser_uncommit article {
-    -ms-grid-row: 1;
-    -ms-grid-column: 3;
-    grid-area: uncommit-txt;
-    display: -ms-grid;
-    display: grid;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: start;
-    -ms-grid-rows: 10% 40% 10%;
-        grid-template-rows: 10% 40% 10%;
-    grid-row-gap: 2vh;
-  }
-  .react-app .content.home .teasers .teaser_uncommit article h5 {
-    font-size: 1.3vw;
-    text-transform: uppercase;
-    font-weight: 200;
-  }
-  .react-app .content.home .teasers .teaser_uncommit article h2 {
-    font-size: 3vw;
-    font-weight: 500;
-  }
-  .react-app .content.home .teasers .teaser_uncommit article h3 {
-    font-size: 1.5vw;
-    font-weight: 300;
-  }
-  .react-app .content.home .teasers .teaser_uncommit img {
-    -ms-grid-row: 1;
-    -ms-grid-column: 2;
-    grid-area: uncommit-img;
-  }
-  .react-app .footer {
-    -ms-grid-row: 4;
-    -ms-grid-column: 1;
-    grid-area: footer;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 5% 30% 60% 5%;
-        grid-template-columns: 5% 30% 60% 5%;
-    -ms-grid-rows: 1fr;
-        grid-template-rows: 1fr;
-        grid-template-areas: ". footer-title footer-list .";
-  }
-  .react-app .footer .footer-title {
-    -ms-grid-row: 1;
-    -ms-grid-column: 2;
-    grid-area: footer-title;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-rows: 5vh 10vh 10vh;
-        grid-template-rows: 5vh 10vh 10vh;
-        grid-template-areas: ". " "footer-heading"  "footer-info";
-  }
-  .react-app .footer .footer-title h1 {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-    grid-area: footer-heading;
-    font-size: 1.9vw;
-  }
-  .react-app .footer .footer-title h2 {
-    -ms-grid-row: 3;
-    -ms-grid-column: 1;
-    grid-area: footer-info;
-    font-size: 1.5vw;
-    font-weight: 400;
-  }
-  .react-app .footer .footer-list {
-    -ms-grid-row: 1;
-    -ms-grid-column: 3;
-    grid-area: footer-list;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
-    -ms-grid-rows: 1fr;
-        grid-template-rows: 1fr;
-        grid-template-areas: "explore-li genre-li pages-li";
-  }
-  .react-app .footer .footer-list ul:nth-child(1) {
-    list-style: none;
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    grid-area: explore-li;
-    display: -ms-grid;
-    display: grid;
-    -ms-flex-line-pack: start;
-        align-content: start;
-    grid-row-gap: 1.5vh;
-  }
-  .react-app .footer .footer-list ul:nth-child(1) li a {
-    text-decoration: none;
-  }
-  .react-app .footer .footer-list ul:nth-child(2) {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-row: 1;
-    -ms-grid-column: 2;
-    grid-area: genre-li;
-    -ms-flex-line-pack: start;
-        align-content: start;
-    grid-row-gap: 1.5vh;
-  }
-  .react-app .footer .footer-list ul:nth-child(2) li a {
-    text-decoration: none;
-  }
-  .react-app .footer .footer-list ul:nth-child(3) {
-    -ms-grid-row: 1;
-    -ms-grid-column: 3;
-    grid-area: pages-li;
-    grid-row-gap: 1.5vh;
-    display: -ms-grid;
-    display: grid;
-    -ms-flex-line-pack: start;
-        align-content: start;
-  }
-  .react-app .footer .footer-list ul:nth-child(3) li a {
-    text-decoration: none;
-  }
+}
+
+.react-app {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 3vh 10vh 60fr 10fr;
+      grid-template-rows: 3vh 10vh 60fr 10fr;
+  -ms-grid-columns: 50vw 20vw auto auto;
+      grid-template-columns: 50vw 20vw auto auto;
+      grid-template-areas: "headerandnav headerandnav headerandnav headerandnav" "headerandnav headerandnav headerandnav headerandnav" "content content content content" "footer footer footer footer";
+}
+
+.react-app .menu-and-navigation {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  z-index: 11;
+  margin-top: 2vh;
+  border: 3px solid red;
+}
+
+.react-app .menu-and-navigation .burger {
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  grid-row-gap: 2px;
+}
+
+.react-app .menu-and-navigation .burger .line1 {
+  width: 20px;
+  height: 3px;
+  background-color: var(--be-accent-default);
+}
+
+.react-app .menu-and-navigation .burger .line2 {
+  width: 20px;
+  height: 3px;
+  background-color: var(--be-accent-default);
+  -webkit-transition: -webkit-transform;
+  transition: -webkit-transform;
+  transition: transform;
+  transition: transform, -webkit-transform;
+}
+
+.react-app .menu-and-navigation .burger .line3 {
+  width: 20px;
+  height: 3px;
+  background-color: var(--be-accent-default);
+}
+
+.react-app .menu-and-navigation .navigation-list {
+  list-style: none;
+}
+
+.react-app .menu-and-navigation .navigation-links {
+  color: var(--be-accent-default);
+  padding: 10px;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  background-size: 600% 200%;
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(50%, var(--be-primary-darker)), color-stop(50%, white));
+  background-image: linear-gradient(to top, var(--be-primary-darker) 50%, white 50%);
+  font-weight: bold;
+}
+
+.react-app .menu-and-navigation .navigation-links:hover {
+  background-position: 0 100%;
+  cursor: pointer;
+}
+
+.react-app .header {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: headerandnav;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50vw 20vw auto auto;
+      grid-template-columns: 50vw 20vw auto auto;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: " logo . . login-button";
+}
+
+.react-app .header img {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: logo;
+  width: 40vw;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.react-app .header button {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  grid-area: login-button;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  height: 8vh;
+  width: 10vw;
+  background-color: var(--be-accent-default);
+  color: white;
+  font-size: 1.3vw;
+  font-weight: 500;
+  border: 0px;
+}
+
+.react-app .header button:hover {
+  cursor: pointer;
+}
+
+.react-app .content.home {
+  background-color: var(--be-background);
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: content;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 120vh 100vh 170vh;
+      grid-template-rows: 120vh 100vh 170vh;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+      grid-template-areas: "reel" "features" "teasers";
+}
+
+.react-app .content.home .reel {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: reel;
+  border: 3px solid green;
+  background-image: url("../assets//images/reel.jpg");
+  -webkit-box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+          box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+  background-color: #f8f7d8;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-grid-rows: 25vh 5vh 45vh;
+      grid-template-rows: 25vh 5vh 45vh;
+  -ms-grid-columns: 1fr 3fr 1fr;
+      grid-template-columns: 1fr 3fr 1fr;
+      grid-template-areas: ". heading . " ". sub-heading ." ". button . ";
+}
+
+.react-app .content.home .reel h1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: heading;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  font-size: 5vw;
+}
+
+.react-app .content.home .reel h2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: sub-heading;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  font-size: 4vh;
+  font-weight: 300;
+  text-align: center;
+}
+
+.react-app .content.home .reel button {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: button;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  height: 10vh;
+  width: 20vw;
+  border-radius: 50px;
+  background-color: var(--be-accent-default);
+  color: white;
+  font-size: 20px;
+  border: 0px;
+}
+
+.react-app .content.home .reel button button:hover {
+  cursor: pointer;
+}
+
+.react-app .content.home .features {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: features;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 5fr 5fr 5fr 1fr;
+      grid-template-columns: 1fr 5fr 5fr 5fr 1fr;
+  grid-column-gap: 2vw;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: ". high-quality users discover .";
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.react-app .content.home .features article figure {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.react-app .content.home .features article figcaption {
+  text-align: center;
+}
+
+.react-app .content.home .features .high-quality {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: high-quality;
+}
+
+.react-app .content.home .features .users {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: users;
+}
+
+.react-app .content.home .features .discover {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  grid-area: discover;
+}
+
+.react-app .content.home .features svg {
+  height: 15vh;
+}
+
+.react-app .content.home .teasers {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: teasers;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 80vh 80vh;
+      grid-template-rows: 80vh 80vh;
+      grid-template-areas: "teaser_freedom" "teaser_uncommit";
+}
+
+.react-app .content.home .teasers .teaser_freedom {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: teaser_freedom;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 7fr 7fr 1fr;
+      grid-template-columns: 1fr 7fr 7fr 1fr;
+  grid-column-gap: 4vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+      grid-template-areas: ". teaser-freedom-txt freedom-img .";
+}
+
+.react-app .content.home .teasers .teaser_freedom article {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: teaser-freedom-txt;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -ms-grid-rows: 10% 40% 10%;
+      grid-template-rows: 10% 40% 10%;
+  grid-row-gap: 2vh;
+}
+
+.react-app .content.home .teasers .teaser_freedom article h5 {
+  font-size: 1.3vw;
+  text-transform: uppercase;
+  font-weight: 200;
+}
+
+.react-app .content.home .teasers .teaser_freedom article h2 {
+  font-size: 3vw;
+  font-weight: 500;
+}
+
+.react-app .content.home .teasers .teaser_freedom article h3 {
+  font-size: 1.5vw;
+  font-weight: 300;
+}
+
+.react-app .content.home .teasers .teaser_freedom img {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: freedom-img;
+}
+
+.react-app .content.home .teasers .teaser_uncommit {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: teaser_uncommit;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 7fr 7fr 1fr;
+      grid-template-columns: 1fr 7fr 7fr 1fr;
+  grid-column-gap: 4vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+      grid-template-areas: ". uncommit-img uncommit-txt .";
+}
+
+.react-app .content.home .teasers .teaser_uncommit article {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: uncommit-txt;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -ms-grid-rows: 10% 40% 10%;
+      grid-template-rows: 10% 40% 10%;
+  grid-row-gap: 2vh;
+}
+
+.react-app .content.home .teasers .teaser_uncommit article h5 {
+  font-size: 1.3vw;
+  text-transform: uppercase;
+  font-weight: 200;
+}
+
+.react-app .content.home .teasers .teaser_uncommit article h2 {
+  font-size: 3vw;
+  font-weight: 500;
+}
+
+.react-app .content.home .teasers .teaser_uncommit article h3 {
+  font-size: 1.5vw;
+  font-weight: 300;
+}
+
+.react-app .content.home .teasers .teaser_uncommit img {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: uncommit-img;
+}
+
+.react-app .footer {
+  border: 5px solid red;
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: footer;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 5% 30% 60% 5%;
+      grid-template-columns: 5% 30% 60% 5%;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: ". footer-title footer-list .";
+}
+
+.react-app .footer .footer-title {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: footer-title;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 5vh 10vh 10vh;
+      grid-template-rows: 5vh 10vh 10vh;
+      grid-template-areas: ". " "footer-heading"  "footer-info";
+}
+
+.react-app .footer .footer-title h1 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: footer-heading;
+  font-size: 1.9vw;
+}
+
+.react-app .footer .footer-title h2 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: footer-info;
+  font-size: 1.5vw;
+  font-weight: 400;
+}
+
+.react-app .footer .footer-list {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: footer-list;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: "explore-li genre-li pages-li";
+}
+
+.react-app .footer .footer-list ul:nth-child(1) {
+  list-style: none;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: explore-li;
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-line-pack: start;
+      align-content: start;
+  grid-row-gap: 1.5vh;
+}
+
+.react-app .footer .footer-list ul:nth-child(1) li a {
+  text-decoration: none;
+}
+
+.react-app .footer .footer-list ul:nth-child(2) {
+  list-style: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: genre-li;
+  -ms-flex-line-pack: start;
+      align-content: start;
+  grid-row-gap: 1.5vh;
+}
+
+.react-app .footer .footer-list ul:nth-child(2) li a {
+  text-decoration: none;
+}
+
+.react-app .footer .footer-list ul:nth-child(3) {
+  list-style: none;
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: pages-li;
+  grid-row-gap: 1.5vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-line-pack: start;
+      align-content: start;
+}
+
+.react-app .footer .footer-list ul:nth-child(3) li a {
+  text-decoration: none;
 }
 /*# sourceMappingURL=App.css.map */
