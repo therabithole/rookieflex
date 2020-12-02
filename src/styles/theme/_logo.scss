@@ -1,4 +1,10 @@
-@mixin appBorder($color) {
-    border: 12px solid $color; 
+
+
+@mixin control-logo($h: null, $w: null) {
+     height: $h;
+     width: $w  }
     
-}
+
+
+ 
+ 

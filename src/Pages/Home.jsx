@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import "../styles/App.css"
 
 import Header from "../components_r/page°/header/Header";
 import Footer from "../components_r/page°/footer/Footer";
@@ -72,21 +73,21 @@ class Home extends Component {
             <section className="teasers">
             <article className="teaser_freedom"> 
             <article className="teaser-freedom-txt ">
-                <h5>complete freedom</h5> 
-                <h2> Watch Anytime, Anywhere. From Any Device.</h2>
-                <h3> Watch TV Shows And Movies on Smart TVs, Consoles, Chromecast, 
-                Apple TV, Phone, Tablet or Browser.</h3>
+                <small>complete freedom</small> 
+                <h3> Watch Anytime, Anywhere. From Any Device.</h3>
+                <p> Watch TV Shows And Movies on Smart TVs, Consoles, Chromecast, 
+                Apple TV, Phone, Tablet or Browser.</p>
             </article>
            <img src={teaser_freedom}/> 
             </article>
 
 
             <article className="teaser_uncommit">  
-            <article>
-                <h5>No commitments</h5>
-                <h2> Cancel Online Anytime.</h2>
-                <h3>If you decide MTDb isn't for you - no problem. No commitment. 
-                    Cancel online at anytime.</h3>
+            <article className="teaser-uncommit-txt">
+                <small>No commitments</small>
+                <h3> Cancel Online Anytime.</h3>
+                <p>If you decide MTDb isn't for you - no problem. No commitment. 
+                    Cancel online at anytime.</p>
             </article>
            <img src={teaser_uncommit}/>
             </article>

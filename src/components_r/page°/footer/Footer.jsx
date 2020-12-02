@@ -5,12 +5,12 @@ class Footer extends Component {
         return ( 
         <section className="footer">
         <section className="footer-title">
-            <h1>About  </h1>
-            <h2> Short films streaming platform </h2> 
+            <small>About  </small>
+            <small> Short films streaming platform </small> 
        </section>
        <section className="footer-list"> 
        <ul>
-            <h5> Explore </h5>
+            <p> Explore </p>
            <li><a  href="">Top Movies</a></li>
            <li><a  href="">Top Shows</a></li>
            <li><a  href="">Coming Soon</a></li>
@@ -19,7 +19,7 @@ class Footer extends Component {
           
        </ul>
        <ul>
-            <h5> Genre </h5>
+            <p> Genre </p>
            <li><a href="">Action </a></li>
            <li><a href="">Comedy </a></li>
            <li><a href="">Drama </a></li>
@@ -27,7 +27,7 @@ class Footer extends Component {
            <li><a href="">Adventure  </a></li>
        </ul>
        <ul>
-       <h5> Pages </h5>
+       <p> Pages </p>
            <li><a href="">Contact </a></li>
            <li><a href="">Privacy Policy </a></li>
            <li><a href="">Terms of Use </a></li>

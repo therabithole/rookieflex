@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import Logo from "../logo/Logo";
-import Hamburger from '../hamburger/Hamburger'
+
 
 class Header extends Component {
     state = {  }
     render() { 
         return ( <section className="header"> 
                <Logo/>
-              
+             
                 <button> Login </button> </section>  );
     }
 }
